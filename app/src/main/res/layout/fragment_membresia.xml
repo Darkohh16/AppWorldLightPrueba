@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo (opcional) -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_logo" />
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="World Light\nGym"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#3F3D9D"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/tvSubtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elige tu Membresía"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona el plan que mejor se adapte a tus necesidades"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Beneficios World -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F4F4"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="2dp"
+            android:backgroundTint="#F4F4F4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beneficios World"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅💪 Entrena en una sola sede World Light\n✅🏋️ Áreas de Cardio y Musculación\n✅🕺 Acceso a nuestras clases grupales: Baile, Cycling y Funcional\n✅🔒 Lockers y cámaras de seguridad"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Botón World -->
+        <Button
+            android:id="@+id/btnWorld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡LO QUIERO¡"
+            android:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- Beneficios Blue -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E0F2FF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:backgroundTint="#E0F2FF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beneficios Blue"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#0D47A1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅💪 Entrena en todas nuestras sedes\n✅🥗 Nutrición y Psiconutrición\n✅🔒 Lockers y cámaras de seguridad\n✅❄️ Podrás congelar tu plan\n✅👥 Invita hasta 4 amigos por mes\n✅🕺 Acceso a clases grupales: Baile, Cycling y Funcional\n✅🏋️ Acceso a las áreas de Musculación y Cardio"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Botón Blue -->
+
+        <Button
+            android:id="@+id/btnBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡ESTOY LISTO¡"
+            android:backgroundTint="#2D5BFF"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Colores principales de la aplicación -->
+    <color name="primary_blue">#2D2DDE</color>
+    <color name="primary_blue_light">#2196F3</color>
+    <color name="background_light">#F7F7F7</color>
+    <color name="border_color">#E0E0E0</color>
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+    <color name="primary_blue_dark">#1E47CC</color>
+    <color name="light_blue">#2196F3</color>
+    <color name="gray_background">#F5F5F5</color>
+    <color name="gray_text">#666666</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="green_motivation">#E8F5E8</color>
+    <color name="green_text">#2E7D32</color>
+    <color name="exercise_tip_background">#F5F5F5</color>
+    <color name="pressedColor">#E0E0E0</color>
+    <color name="normalColor">#FFFFFF</color>
+    <color name="dia_no_seleccionado">#DDE6FB</color>
+    <color name="purple_700">#2196F3</color>
+    <color name="disabled_background">#EEEEEE</color>
+    <color name="disabled_text">#B0B0B0</color>
+</resources>

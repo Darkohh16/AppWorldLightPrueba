@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.worldlightprograma.Fragments.Auth.LoginFragment"
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_PrincipalFragment"
+            app:destination="@id/PrincipalFragment" />
+
+        <action
+            android:id="@+id/action_LoginFragment_to_RegistroFragment"
+            app:destination="@id/RegistroFragment" />
+
+        <action
+            android:id="@+id/action_LoginFragment_to_RecuperarCorreoFragment"
+            app:destination="@id/RecuperarCorreoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RegistroFragment"
+        android:name="com.example.worldlightprograma.Fragments.Auth.RegistroFragment"
+        android:label="@string/registro_fragment_label"
+        tools:layout="@layout/fragment_registro">
+
+        <action
+            android:id="@+id/action_RegistroFragment_to_MembresiaFragment"
+            app:destination="@+id/MembresiaFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/MembresiaFragment"
+        android:name="com.example.worldlightprograma.Fragments.Auth.MembresiaFragment"
+        android:label="@string/membresia_fragment_label"
+        tools:layout="@layout/fragment_membresia">
+
+        <action
+            android:id="@+id/action_MembresiaFragment_to_RegistroUserFragment"
+            app:destination="@id/RegistroUserFragment" />
+
+        <argument
+            android:name="reqRegistro"
+            app:argType="com.example.worldlightprograma.Models.User.ReqRegistro" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RegistroUserFragment"
+        android:name="com.example.worldlightprograma.Fragments.Auth.RegistroUserFragment"
+        android:label="@string/registro_user_fragment_label"
+        tools:layout="@layout/fragment_registro_user">
+
+        <action
+            android:id="@+id/action_RegistroUserFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+        <argument
+            android:name="reqRegistro"
+            app:argType="com.example.worldlightprograma.Models.User.ReqRegistro" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/PrincipalFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.PrincipalFragment"
+        android:label="@string/principal_fragment_label"
+        tools:layout="@layout/fragment_principal">
+
+        <action
+            android:id="@+id/action_PrincipalFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+        <action
+            android:id="@+id/action_PrincipalFragment_to_RutinasFragment"
+            app:destination="@id/RutinasFragment" />
+
+        <action
+            android:id="@+id/action_PrincipalFragment_to_PlanNutricionalFragment"
+            app:destination="@id/PlanNutricionalFragment" />
+
+        <action
+            android:id="@+id/action_PrincipalFragment_to_ClasesDisponiblesFragment"
+            app:destination="@id/ClasesDisponiblesFragment" />
+
+        <action
+            android:id="@+id/action_PrincipalFragment_to_CrearRutinaFragment"
+            app:destination="@id/CrearRutinaFragment" />
+
+        <action
+            android:id="@+id/action_PrincipalFragment_to_PerfilFragment"
+            app:destination="@id/PerfilFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RutinasFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.RutinasFragment"
+        android:label="@string/rutinas_fragment_label"
+        tools:layout="@layout/fragment_rutinas">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/PlanNutricionalFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.PlanNutricionalFragment"
+        android:label="@string/plan_nutricional_fragment_label"
+        tools:layout="@layout/fragment_plan_nutricional">
+        <argument
+            android:name="nombre"
+            app:argType="string" />
+        <argument
+            android:name="apellido"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ClasesDisponiblesFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.ClasesDisponiblesFragment"
+        android:label="Clases Disponibles Fragment"
+        tools:layout="@layout/fragment_clases_disponibles" />
+
+    <fragment
+        android:id="@+id/CrearRutinaFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.CrearRutinaFragment"
+        android:label="Crear Rutina Fragment"
+        tools:layout="@layout/fragment_crear_rutina">
+        <action
+            android:id="@+id/action_CrearRutinaFragment_to_RutinasFragment"
+            app:destination="@id/RutinasFragment" />
+        <action
+            android:id="@+id/action_CrearRutinaFragment_to_PrincipalFragment"
+            app:destination="@id/PrincipalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/EjerciciosFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.EjerciciosFragment"
+        android:label="Ejercicios Fragment"
+        tools:layout="@layout/fragment_ejercicios" />
+
+    <fragment
+        android:id="@+id/PerfilFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.PerfilFragment"
+        android:label="Perfil Fragment"
+        tools:layout="@layout/fragment_perfil">
+        
+        <action
+            android:id="@+id/action_PerfilFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment"
+            app:popUpTo="@id/LoginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecuperarCorreoFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.RecuperarCorreoFragment"
+        android:label="Recuperar Correo"
+        tools:layout="@layout/fragment_recuperar_correo">
+        <action
+            android:id="@+id/action_RecuperarCorreoFragment_to_RecuperarCodigoFragment"
+            app:destination="@id/RecuperarCodigoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecuperarCodigoFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.RecuperarCodigoFragment"
+        android:label="Recuperar Código"
+        tools:layout="@layout/fragment_recuperar_codigo">
+        <action
+            android:id="@+id/action_RecuperarCodigoFragment_to_RecuperarNuevaContrasenaFragment"
+            app:destination="@id/RecuperarNuevaContrasenaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecuperarNuevaContrasenaFragment"
+        android:name="com.example.worldlightprograma.Fragments.Dashboard.RecuperarNuevaContrasenaFragment"
+        android:label="Nueva Contraseña"
+        tools:layout="@layout/fragment_recuperar_nueva_contrasena">
+        <action
+            android:id="@+id/action_RecuperarNuevaContrasenaFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+</navigation>
